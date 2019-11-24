@@ -13,6 +13,8 @@ import android.view.View;
 
 public class DetailCourseActivity extends AppCompatActivity {
 
+    public static final String EXTRA_COURSE = "extra_course";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
