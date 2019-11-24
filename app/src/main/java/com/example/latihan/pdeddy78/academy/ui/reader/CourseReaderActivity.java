@@ -8,6 +8,8 @@ import com.example.latihan.pdeddy78.academy.R;
 
 public class CourseReaderActivity extends AppCompatActivity {
 
+    public static final String EXTRA_COURSE_ID = "extra_course_ID";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
