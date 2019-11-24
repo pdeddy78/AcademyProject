@@ -33,7 +33,7 @@ public class DetailCourseAdapter extends RecyclerView.Adapter<DetailCourseAdapte
 
     @Override
     public void onBindViewHolder(@NonNull ModuleViewHolder holder, int position) {
-        holder.textTitle.setText(mModules.get(position).getmTitle());
+        holder.bind(mModules.get(position).getmTitle());
     }
 
     @Override
@@ -49,6 +49,10 @@ public class DetailCourseAdapter extends RecyclerView.Adapter<DetailCourseAdapte
             super(itemView);
 
             textTitle = itemView.findViewById(R.id.text_module_title);
+        }
+
+        void bind(String title) {
+            textTitle.setText(title);
         }
     }
 }
